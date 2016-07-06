@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="todoAppBhill" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>ToDoList</name>
     <description>
         Todo List application.
@@ -32,12 +32,12 @@
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
     <icon src="icon.png" />
     <platform name="android">
-        <icon density="ldpi" src="icon.png" />
-        <icon density="mdpi" src="icon.png" />
-        <icon density="hdpi" src="icon.png" />
-        <icon density="xhdpi" src="icon.png" />
-        <icon density="xxhdpi" src="icon.png" />
-        <icon density="xxxhdpi" src="icon.png" />
+        <icon density="ldpi" src="www/icon.png" />
+        <icon density="mdpi" src="www/icon.png" />
+        <icon density="hdpi" src="www/icon.png" />
+        <icon density="xhdpi" src="www/icon.png" />
+        <icon density="xxhdpi" src="www/icon.png" />
+        <icon density="xxxhdpi" src="www/icon.png" />
         <splash density="land-ldpi" src="css/basket.jpg" />
         
     </platform>
