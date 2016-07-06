@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Hello World</name>
+    <name>ToDoList</name>
     <description>
-        Todo List application that responds to the deviceready event.
+        Todo List application.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="ben.hill@webelelevate.ie" href="">
+        Ben Hill
     </author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
@@ -32,13 +32,13 @@
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
     <icon src="icon.png" />
     <platform name="android">
-        <icon density="ldpi" src="www/res/icon/android/icon.png" />
-        <icon density="mdpi" src="www/res/icon/android/icon.png" />
-        <icon density="hdpi" src="www/res/icon/android/icon.png" />
-        <icon density="xhdpi" src="www/res/icon/android/icon.png" />
-        <icon density="xxhdpi" src="www/res/icon/android/icon.png" />
-        <icon density="xxxhdpi" src="www/res/icon/android/icon.png" />
-        <splash density="land-ldpi" src="www/res/screen/android/icon.png" />
+        <icon density="ldpi" src="icon.png" />
+        <icon density="mdpi" src="icon.png" />
+        <icon density="hdpi" src="icon.png" />
+        <icon density="xhdpi" src="icon.png" />
+        <icon density="xxhdpi" src="icon.png" />
+        <icon density="xxxhdpi" src="icon.png" />
+        <splash density="land-ldpi" src="css/basket.jpg" />
         
     </platform>
     

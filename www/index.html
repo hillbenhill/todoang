@@ -37,42 +37,49 @@
     * Create your own at http://cspisawesome.com
     -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
-
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-	<style>
+	
+	
+      <style>
       body {
-        padding:40px;
+        padding:40px 20px 0 20px;
       }
       #todoDetails {
         visibility: hidden;
       }
     </style>
+    </style>
     <title>ToDo List with Angular and PhoneGap</title>
 </head>
 
-<body ng-app="myApp" ng-controller="todoCtrl">
-<div class="app">
+<body  ng-app="myApp" ng-controller="todoCtrl">
+
         
         
-		<div class = "Container">
-<h2>My Todo List</h2>
+<div class = "Container ">
+<div class = "app row1 col-md-6 ">
+<h1>My Todo List</h1>
 
 <form ng-submit="todoAdd()">
     <input type="text" ng-model="todoInput" size="50" placeholder="Add New">
-    <input class="btn btn-warning" type="submit" value="Add New">
+    <input class=".btn btn-warning"" type="submit" value="Add New">
+	
 </form>
 
 <br>
 
 <div ng-repeat="x in todoList track by $index">
-    <input type="checkbox" ng-model="x.done"> <span ng-bind="x.todoText"></span>
+    <input type="checkbox" ng-model="x.done"> 
+	<span ng-bind="x.todoText"></span>
 </div>
-
-<p><button class="btn btn-warning" ng-click="delete()">Remove marked</button></p>
+<p><button  ng-click="delete()">Remove marked</button></p>
+</div>
 </div>
 		
-    </div>
+
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
