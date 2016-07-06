@@ -39,19 +39,44 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Hello World</title>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+	<style>
+      body {
+        padding:40px;
+      }
+      #todoDetails {
+        visibility: hidden;
+      }
+    </style>
+    <title>ToDo List with Angular and PhoneGap</title>
 </head>
 
-<body>
-    <div class="app">
-        <h1>PhoneGap</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
-        </div>
+<body ng-app="myApp" ng-controller="todoCtrl">
+<div class="app">
+        
+        
+		<div class = "Container">
+<h2>My Todo List</h2>
+
+<form ng-submit="todoAdd()">
+    <input type="text" ng-model="todoInput" size="50" placeholder="Add New">
+    <input class="btn btn-warning" type="submit" value="Add New">
+</form>
+
+<br>
+
+<div ng-repeat="x in todoList track by $index">
+    <input type="checkbox" ng-model="x.done"> <span ng-bind="x.todoText"></span>
+</div>
+
+<p><button class="btn btn-warning" ng-click="delete()">Remove marked</button></p>
+</div>
+		
     </div>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/todoContoller.js"></script>
     <script type="text/javascript">
         app.initialize();
     </script>
